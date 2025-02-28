@@ -1,0 +1,233 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      6920,        225]
+NotebookOptionsPosition[      6039,        202]
+NotebookOutlinePosition[      6431,        218]
+CellTagsIndexPosition[      6388,        215]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+> 6.7 Make a table of the lists of (integer) digits forming each of the first \
+10 sqares
+
+> +6.5 Make a list for numbers n up to 12, in which each element is a column \
+of the values of n, n^2 and n^3.
+\
+\>", "Text",
+ CellChangeTimes->{{3.9497553828304567`*^9, 3.949755459218993*^9}, {
+  3.949756015114202*^9, 3.949756022433187*^9}, {3.949756211441217*^9, 
+  3.949756241984435*^9}},ExpressionUUID->"bb426c2c-ff6d-4d19-84ca-\
+1f305c28072e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "n_", "]"}], ":=", " ", 
+   RowBox[{"n", "^", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "n", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", "10"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.949755976354871*^9, 3.949755979537591*^9}, {
+  3.9497560430502157`*^9, 3.9497561111686993`*^9}, {3.949756165357738*^9, 
+  3.9497562331631613`*^9}},ExpressionUUID->"2b44a560-b292-4d68-8a5f-\
+73426190e533"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "4", ",", "9", ",", "16", ",", "25", ",", "36", ",", "49", ",", 
+   "64", ",", "81", ",", "100"}], "}"}]], "Output",
+ CellChangeTimes->{{3.9497561047030783`*^9, 3.949756111734049*^9}, {
+  3.9497561796241217`*^9, 3.949756192942765*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"9d5bb3c4-7e90-4d73-b342-2756f003fe88"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"g", "[", "n_", "]"}], ":=", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", 
+      RowBox[{"n", "^", "2"}], ",", 
+      RowBox[{"n", "^", "3"}]}], "}"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.949757470209888*^9, 3.949757508022552*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"7ab18f7d-2129-4679-8830-a188466193c1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Column", "[", 
+    RowBox[{"g", "[", "n", "]"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", "12"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.949756181463861*^9, {3.9497572591774683`*^9, 3.949757275367313*^9}, {
+   3.949757322727351*^9, 3.949757328205044*^9}, {3.949757419030439*^9, 
+   3.949757466847459*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"73fef161-fd1d-4cdf-bf02-f8969a466d69"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[GridBox[{
+      {"1"},
+      {"1"},
+      {"1"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"2"},
+      {"4"},
+      {"8"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"3"},
+      {"9"},
+      {"27"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"4"},
+      {"16"},
+      {"64"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"5"},
+      {"25"},
+      {"125"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"6"},
+      {"36"},
+      {"216"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"7"},
+      {"49"},
+      {"343"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"8"},
+      {"64"},
+      {"512"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"9"},
+      {"81"},
+      {"729"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"10"},
+      {"100"},
+      {"1000"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"11"},
+      {"121"},
+      {"1331"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {"12"},
+      {"144"},
+      {"1728"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9497574989983664`*^9, 3.949757511304228*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"e14d4b49-1736-4d88-af1a-0bfd375abfae"]
+}, Open  ]]
+},
+WindowSize->{762, 807},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.2 for Linux x86 (64-bit) (December 26, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6afefc3d-78b1-4288-bcee-689eb3524f69"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 450, 11, 121, "Text",ExpressionUUID->"bb426c2c-ff6d-4d19-84ca-1f305c28072e"],
+Cell[CellGroupData[{
+Cell[1029, 35, 522, 13, 53, "Input",ExpressionUUID->"2b44a560-b292-4d68-8a5f-73426190e533"],
+Cell[1554, 50, 365, 7, 34, "Output",ExpressionUUID->"9d5bb3c4-7e90-4d73-b342-2756f003fe88"]
+}, Open  ]],
+Cell[1934, 60, 396, 10, 51, "Input",ExpressionUUID->"7ab18f7d-2129-4679-8830-a188466193c1"],
+Cell[CellGroupData[{
+Cell[2355, 74, 477, 11, 30, "Input",ExpressionUUID->"73fef161-fd1d-4cdf-bf02-f8969a466d69"],
+Cell[2835, 87, 3188, 112, 75, "Output",ExpressionUUID->"e14d4b49-1736-4d88-af1a-0bfd375abfae"]
+}, Open  ]]
+}
+]
+*)
+
