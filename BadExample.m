@@ -1,0 +1,18 @@
+(* ::Package:: *)
+
+(* :Title: BadExample *)
+(* :Context: BadExample` *)
+(* :Author: GS *)
+(* :Summary: a function with a local variable that has global scope *)
+(* :Copyright: GS 2025 *)
+(* :Package Version: 1 *)
+(* :Mathematica Version: 14 *)
+(* :History: last modified 14/3/2025 *)
+(* :Keywords: scope, nesting, bad programming style *)
+(* :Sources: book \:f00d link *)
+(* :Limitations: this is a preliminary version, for educational purposes only. *)
+(* :Discussion: *)
+(* :Requirements: *)
+(* :Warnings: as the name implies, this is an example of bad programming *)
+(* This function returns the sum of the first n powers of x *)
+PowerSum[x_, n_] := Sum[x^i, {i, 1, n} ]
